@@ -1,9 +1,9 @@
 import { useContext, useRef } from "react";
-import { PostList } from "../store/post-list-store";
+import { PostListContext } from "../store/post-list-store";
 
 const CreatePost = () => {
 
-  const { addPost } = useContext(PostList
+  const { addPost } = useContext(PostListContext
   );
   const userIdElement = useRef();
   const postTitleElement = useRef();
